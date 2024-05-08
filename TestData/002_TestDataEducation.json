@@ -1,0 +1,106 @@
+﻿{
+  "Education": [
+    {
+      "TestCaseId": "TS_201_TC_001",
+      "UniversityName": "",
+      "Country": "New Zealand",
+      "Title": "M.Tech",
+      "Degree": "Master",
+      "YearOfGraduate": "2024",
+      "UniversityNameDelete": "Industry Connect"
+    },
+    {
+      "TestCaseId": "TS_201_TC_002",
+      "UniversityName": "Industry Connect TC2",
+      "Country": "",
+      "Title": "M.Tech",
+      "Degree": "Master",
+      "YearOfGraduate": "2023",
+      "UniversityNameDelete": "Industry Connect TC2"
+
+    },
+      {
+        "TestCaseId": "TS_201_TC_003",
+        "UniversityName": "Industry ConnectTC3",
+        "Country": "New Zealand",
+        "Title": "",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC3"
+      },
+      {
+        "TestCaseId": "TS_201_TC_004",
+        "UniversityName": "Industry Connect TC4",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC4"
+      },
+      {
+        "TestCaseId": "TS_201_TC_005",
+        "UniversityName": "Industry Connect TC5",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "Master",
+        "YearOfGraduate": "",
+        "UniversityNameDelete": "Industry Connect TC5"
+      },
+      {
+        "TestCaseId": "TS_201_TC_006",
+        "UniversityName": "Industry Connect TC6",
+        "Country": "New Zealand",
+        "Title": "",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC6"
+      },
+      {
+        "TestCaseId": "TS_201_TC_007",
+        "UniversityName": "!!! TC7",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "!!! TC7"
+      },
+      {
+        "TestCaseId": "TS_201_TC_008",
+        "UniversityName": "TC8 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "TC8 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH"
+      },
+      {
+        "TestCaseId": "TS_201_TC_009",
+        "UniversityName": "Industry Connect TC9",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "MasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMasterMaster",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC9"
+      },
+      {
+        "TestCaseId": "TS_201_TC_010",
+        "UniversityName": "Industry Connect TC10",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC10"
+      },
+      {
+        "TestCaseId": "TS_202_TC_001",
+        "UniversityName": "Industry Connect TC11",
+        "Country": "New Zealand",
+        "Title": "M.Tech",
+        "Degree": "Master",
+        "YearOfGraduate": "2023",
+        "UniversityNameDelete": "Industry Connect TC11"
+      }
+  ]
+}
+
+
