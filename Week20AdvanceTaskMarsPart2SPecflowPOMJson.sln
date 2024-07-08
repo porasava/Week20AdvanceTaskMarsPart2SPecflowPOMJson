@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Week20AdvanceTaskMarsPart2SPecflowPOMJson", "Week20AdvanceTaskMarsPart2SPecflowPOMJson.csproj", "{89917F99-A2BA-4F5B-B0A0-0BEA93186998}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89917F99-A2BA-4F5B-B0A0-0BEA93186998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89917F99-A2BA-4F5B-B0A0-0BEA93186998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89917F99-A2BA-4F5B-B0A0-0BEA93186998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89917F99-A2BA-4F5B-B0A0-0BEA93186998}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {601FBE44-8BB3-4C43-9FB5-737723EB384F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿{
+  "ManageRequest": [
+    {
+      "TestCaseId": "TS_601_TC_001",
+      "Title": "Digital Marketing Tananya11 TS601TC001",
+      "Description": "Digital Marketing Tananya11",
+      "Category": "Digital Marketing",
+      "Subcategory": "Social Media Marketing",
+      "Tags": "Tananya",
+      "SkillExchange": "Digital Marketing",
+      "UserName1": "Tananya1@hotmail.com",
+      "UserName2": "Tananya2@hotmail.com",
+      "Password": "TananyaHappy"
+    },
+    {
+      "TestCaseId": "TS_601_TC_002",
+      "Title": "Graphics Design Tananya1 TS601TC002",
+      "Description": "Graphics Design Tananya1",
+      "Category": "Graphics & Design",
+      "Subcategory": "Logo Design",
+      "Tags": "Tananya",
+      "SkillExchange": "Graphics & Design",
+      "UserName1": "Tananya1@hotmail.com",
+      "UserName2": "Tananya2@hotmail.com",
+      "Password": "TananyaHappy"
+    },
+    {
+      "TestCaseId": "TS_601_TC_003",
+      "Title": "Digital Marketing Tananya1 TS601TC003",
+      "Description": "Digital Marketing Tananya1",
+      "Category": "Digital Marketing",
+      "Tags": "Tananya",
+      "SkillExchange": "Digital Marketing",
+      "UserName1": "Tananya2@hotmail.com",
+      "Password": "TananyaHappy"
+    }
+
+  ]
+}

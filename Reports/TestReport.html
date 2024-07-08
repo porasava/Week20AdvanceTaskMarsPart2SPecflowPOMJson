@@ -1,0 +1,1503 @@
+
+
+<!DOCTYPE html>
+<html>
+	
+	<head>
+	<meta /> 
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@8539670db814bf19a0ddbe9a6d19058aea0cf981/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+  
+	<title></title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+		
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+
+
+	<body class='extent default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+		
+		<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+            			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<span class='report-name'></span>
+		<span class='report-headline'></span>
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'><span class='label blue darken-3 suite-start-time'>4/22/2024 12:38:17 PM</span></a>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+			<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+					<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+																														<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	
+
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='80'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>29</span> tests passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> failed,</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> skipped, </span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> others</span>
+                </div>
+            </div>
+        </div>
+		    </div>
+</div>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  pass' status='pass' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_100_TC_001 Verify change Password on account Setting page</span>
+						<span class='test-time'>4/22/2024 12:38:20 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:38:20 PM</span>
+							<span class='label end-time'>4/22/2024 12:38:43 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:23s.056ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:38:43</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:38:43</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_100_TC_001_Verify_change_Password_on_account_Setting_page_20240422123843.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_100_TC_001_20240422123843.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_100_TC_001_20240422123843.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_100_TC_001_20240422123843.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_001 Verify that the user can't add an Education on the account profile page with blank on 'college' field left blank</span>
+						<span class='test-time'>4/22/2024 12:38:46 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:38:46 PM</span>
+							<span class='label end-time'>4/22/2024 12:39:04 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.419ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:04</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:04</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_001_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_blank_on_college_field_left_blank_20240422123904.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_001_20240422123904.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_001_20240422123904.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_001_20240422123904.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_002 Verify that the user can't add an Education on the account profile page with the 'Country' field left blank</span>
+						<span class='test-time'>4/22/2024 12:39:07 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:39:07 PM</span>
+							<span class='label end-time'>4/22/2024 12:39:25 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.290ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:25</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:25</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_002_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_the_Country_field_left_blank_20240422123925.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_002_20240422123925.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_002_20240422123925.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_002_20240422123925.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_003 Verify that the user can't add an Education on the account profile page with the 'Title' field left blank</span>
+						<span class='test-time'>4/22/2024 12:39:28 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:39:28 PM</span>
+							<span class='label end-time'>4/22/2024 12:39:46 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.153ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:46</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:39:46</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_003_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_the_Title_field_left_blank_20240422123946.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_003_20240422123946.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_003_20240422123946.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_003_20240422123946.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='5'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_004 Verify that the user can't add an Education on the account profile page with the 'Degree' field left blank</span>
+						<span class='test-time'>4/22/2024 12:39:48 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:39:48 PM</span>
+							<span class='label end-time'>4/22/2024 12:40:06 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.153ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:06</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:06</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_004_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_the_Degree_field_left_blank_20240422124006.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_004_20240422124006.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_004_20240422124006.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_004_20240422124006.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='6'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_005 Verify that the user can't add an Education on the account profile page with the 'Year of Graduation' field left blank</span>
+						<span class='test-time'>4/22/2024 12:40:09 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:40:09 PM</span>
+							<span class='label end-time'>4/22/2024 12:40:27 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.297ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:27</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:27</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_005_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_the_Year_of_Graduation_field_left_blank_20240422124027.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_005_20240422124027.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_005_20240422124027.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_005_20240422124027.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_006 Verify that the user can add an Education on the account profile page and then click on cancel</span>
+						<span class='test-time'>4/22/2024 12:40:30 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:40:30 PM</span>
+							<span class='label end-time'>4/22/2024 12:40:47 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:17s.619ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:47</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:40:47</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_006_Verify_that_the_user_can_add_an_Education_on_the_account_profile_page_and_then_click_on_cancel_20240422124047.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_006_20240422124047.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_006_20240422124047.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_006_20240422124047.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_007 Verify that the user can add an Education on the account profile page with special characters in the 'College' field</span>
+						<span class='test-time'>4/22/2024 12:40:50 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:40:50 PM</span>
+							<span class='label end-time'>4/22/2024 12:41:10 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:19s.699ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:09</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:10</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_007_Verify_that_the_user_can_add_an_Education_on_the_account_profile_page_with_special_characters_in_the_College_field_20240422124109.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_007_20240422124109.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_007_20240422124109.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_007_20240422124109.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='9'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_008 Verify that the user can add an Education on the account profile page with more than 50 letters in the 'College' field</span>
+						<span class='test-time'>4/22/2024 12:41:12 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:41:12 PM</span>
+							<span class='label end-time'>4/22/2024 12:41:33 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:20s.362ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:32</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:33</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_008_Verify_that_the_user_can_add_an_Education_on_the_account_profile_page_with_more_than_50_letters_in_the_College_field_20240422124132.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_008_20240422124132.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_008_20240422124132.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_008_20240422124132.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_009 Verify that the user can add an Education on the account profile page with more than 50 letters in the 'Degree' field</span>
+						<span class='test-time'>4/22/2024 12:41:35 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:41:35 PM</span>
+							<span class='label end-time'>4/22/2024 12:41:56 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:20s.662ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:55</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:41:56</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_009_Verify_that_the_user_can_add_an_Education_on_the_account_profile_page_with_more_than_50_letters_in_the_Degree_field_20240422124155.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_009_20240422124155.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_009_20240422124155.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_009_20240422124155.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='11'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_201_TC_010 Verify that the user can't add an Education on the account profile page with duplicate education details</span>
+						<span class='test-time'>4/22/2024 12:41:58 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:41:58 PM</span>
+							<span class='label end-time'>4/22/2024 12:42:20 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:22s.356ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:42:20</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:42:20</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_201_TC_010_Verify_that_the_user_can_t_add_an_Education_on_the_account_profile_page_with_duplicate_education_details_20240422124220.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_010_20240422124220.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_010_20240422124220.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_201_TC_010_20240422124220.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='12'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_202_TC_001 Verify that the user delete an Education on the account profile page</span>
+						<span class='test-time'>4/22/2024 12:42:23 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:42:23 PM</span>
+							<span class='label end-time'>4/22/2024 12:42:43 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:19s.654ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:42:42</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:42:43</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_202_TC_001_Verify_that_the_user_delete_an_Education_on_the_account_profile_page_20240422124242.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_202_TC_001_20240422124242.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_202_TC_001_20240422124242.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_202_TC_001_20240422124242.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_001 Verify that the user add a Certification on the account profile page with correct mandatory field</span>
+						<span class='test-time'>4/22/2024 12:42:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:42:45 PM</span>
+							<span class='label end-time'>4/22/2024 12:43:03 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:17s.955ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:03</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:03</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_001_Verify_that_the_user_add_a_Certification_on_the_account_profile_page_with_correct_mandatory_field_20240422124303.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_001_20240422124303.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_001_20240422124303.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_001_20240422124303.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='14'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_002 Verify that the user add a Certification on the account profile page with incorrect mandatory field</span>
+						<span class='test-time'>4/22/2024 12:43:05 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:43:05 PM</span>
+							<span class='label end-time'>4/22/2024 12:43:21 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:16s.053ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:21</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:21</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_002_Verify_that_the_user_add_a_Certification_on_the_account_profile_page_with_incorrect_mandatory_field_20240422124321.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_002_20240422124321.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_002_20240422124321.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_002_20240422124321.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='15'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_003 Verify that the user add a Certification on the account profile page with blank on certification field</span>
+						<span class='test-time'>4/22/2024 12:43:24 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:43:24 PM</span>
+							<span class='label end-time'>4/22/2024 12:43:40 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:16s.089ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:40</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:43:40</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_003_Verify_that_the_user_add_a_Certification_on_the_account_profile_page_with_blank_on_certification_field_20240422124340.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_003_20240422124340.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_003_20240422124340.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_003_20240422124340.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='16'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_004 Verify that the user add a Certification on the account profile page with blank on certified from field</span>
+						<span class='test-time'>4/22/2024 12:43:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:43:43 PM</span>
+							<span class='label end-time'>4/22/2024 12:44:00 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:16s.925ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:00</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:00</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_004_Verify_that_the_user_add_a_Certification_on_the_account_profile_page_with_blank_on_certified_from_field_20240422124400.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_004_20240422124400.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_004_20240422124400.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_004_20240422124400.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='17'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_005 Verify that the user add a Certification on the account profile page with blank on year field</span>
+						<span class='test-time'>4/22/2024 12:44:02 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:44:02 PM</span>
+							<span class='label end-time'>4/22/2024 12:44:19 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:16s.926ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:19</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:19</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_005_Verify_that_the_user_add_a_Certification_on_the_account_profile_page_with_blank_on_year_field_20240422124419.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_005_20240422124419.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_005_20240422124419.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_005_20240422124419.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='18'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_006 Verify that the user adds a certification to the account profile page with more than 50 letters in the certification field</span>
+						<span class='test-time'>4/22/2024 12:44:22 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:44:22 PM</span>
+							<span class='label end-time'>4/22/2024 12:44:41 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:19s.115ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:40</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:44:41</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_006_Verify_that_the_user_adds_a_certification_to_the_account_profile_page_with_more_than_50_letters_in_the_certification_field_20240422124440.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_006_20240422124440.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_006_20240422124440.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_006_20240422124440.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_301_TC_007 Verify that the user adds a certification to the account profile page with more than 50 letters in the certified from field</span>
+						<span class='test-time'>4/22/2024 12:44:43 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:44:43 PM</span>
+							<span class='label end-time'>4/22/2024 12:45:02 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:18s.796ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:02</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:02</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_301_TC_007_Verify_that_the_user_adds_a_certification_to_the_account_profile_page_with_more_than_50_letters_in_the_certified_from_field_20240422124502.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_007_20240422124502.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_007_20240422124502.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_301_TC_007_20240422124502.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='20'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_302_TC_001 Verify that the user delete a Certification on the account profile page</span>
+						<span class='test-time'>4/22/2024 12:45:04 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:45:04 PM</span>
+							<span class='label end-time'>4/22/2024 12:45:22 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:17s.924ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:22</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:22</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_302_TC_001_Verify_that_the_user_delete_a_Certification_on_the_account_profile_page_20240422124522.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_302_TC_001_20240422124522.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_302_TC_001_20240422124522.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_302_TC_001_20240422124522.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='21'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_400_TC_001 Verify that the user edit description on the account profile page</span>
+						<span class='test-time'>4/22/2024 12:45:25 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:45:25 PM</span>
+							<span class='label end-time'>4/22/2024 12:45:42 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:17s.325ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:42</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:45:42</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_400_TC_001_Verify_that_the_user_edit_description_on_the_account_profile_page_20240422124542.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_400_TC_001_20240422124542.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_400_TC_001_20240422124542.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_400_TC_001_20240422124542.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='22'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_501_TC_001 Verify the user click on edit listing link on manage listings page</span>
+						<span class='test-time'>4/22/2024 12:45:45 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:45:45 PM</span>
+							<span class='label end-time'>4/22/2024 12:46:38 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:53s.354ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:46:38</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:46:38</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_501_TC_001_Verify_the_user_click_on_edit_listing_link_on_manage_listings_page_20240422124638.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_001_20240422124638.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_001_20240422124638.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_001_20240422124638.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='23'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_501_TC_002 Verify the user click on see listing link on manage listings page</span>
+						<span class='test-time'>4/22/2024 12:46:41 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:46:41 PM</span>
+							<span class='label end-time'>4/22/2024 12:47:07 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:25s.799ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:06</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:07</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_501_TC_002_Verify_the_user_click_on_see_listing_link_on_manage_listings_page_20240422124706.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_002_20240422124706.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_002_20240422124706.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_002_20240422124706.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='24'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_501_TC_003 Verify the user click on delete listing link on manage listings page</span>
+						<span class='test-time'>4/22/2024 12:47:09 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:47:09 PM</span>
+							<span class='label end-time'>4/22/2024 12:47:27 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:17s.660ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:27</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:27</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_501_TC_003_Verify_the_user_click_on_delete_listing_link_on_manage_listings_page_20240422124727.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_003_20240422124727.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_003_20240422124727.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_003_20240422124727.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_501_TC_005 Verify the user click on activate listing link on manage listings page</span>
+						<span class='test-time'>4/22/2024 12:47:29 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:47:29 PM</span>
+							<span class='label end-time'>4/22/2024 12:47:50 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:20s.357ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:49</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:47:50</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_501_TC_005_Verify_the_user_click_on_activate_listing_link_on_manage_listings_page_20240422124749.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_005_20240422124749.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_005_20240422124749.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_005_20240422124749.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='26'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_501_TC_006 Verify the user click on Deactivate listing link on manage listings page</span>
+						<span class='test-time'>4/22/2024 12:47:52 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:47:52 PM</span>
+							<span class='label end-time'>4/22/2024 12:48:12 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:0m:20s.385ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:48:12</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:48:12</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_501_TC_006_Verify_the_user_click_on_Deactivate_listing_link_on_manage_listings_page_20240422124812.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_006_20240422124812.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_006_20240422124812.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_501_TC_006_20240422124812.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='27'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_601_TC_001 Verify the user click on Received requests dropdown and click accept</span>
+						<span class='test-time'>4/22/2024 12:48:15 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:48:15 PM</span>
+							<span class='label end-time'>4/22/2024 12:49:25 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:1m:10s.270ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:49:25</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:49:25</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_601_TC_001_Verify_the_user_click_on_Received_requests_dropdown_and_click_accept_20240422124925.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_001_20240422124925.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_001_20240422124925.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_001_20240422124925.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='28'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_601_TC_002 Verify the user click on Received requests dropdown and click decline</span>
+						<span class='test-time'>4/22/2024 12:49:28 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:49:28 PM</span>
+							<span class='label end-time'>4/22/2024 12:50:37 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:1m:9s.670ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:50:37</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:50:37</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_601_TC_002_Verify_the_user_click_on_Received_requests_dropdown_and_click_decline_20240422125037.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_002_20240422125037.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_002_20240422125037.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_002_20240422125037.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+				<li class='test displayed active  pass' status='pass' test-id='29'>
+					<div class='test-heading'>
+						<span class='test-name'>TS_601_TC_003 Verify the user click on send request dropdown and click completed button</span>
+						<span class='test-time'>4/22/2024 12:50:40 PM</span>
+						<span class='test-status right pass'>Pass</span>
+					</div>
+					<div class='test-content hide'>
+						<div class='test-time-info'>
+							<span class='label start-time'>4/22/2024 12:50:40 PM</span>
+							<span class='label end-time'>4/22/2024 12:51:58 PM</span>
+							<span class='label time-taken grey lighten-1 white-text'>0h:1m:18s.152ms</span>
+						</div>
+							<div class='test-steps'>
+								<table class='bordered table-results'>
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Timestamp</th>
+											<th>Details</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:51:58</td>
+											<td class='step-details'>
+Test passed																							</td>
+										</tr>
+										<tr class='log' status='pass'>
+											<td class='status pass' title='Pass' alt='Pass'>
+												<i class='material-icons'>check_circle</i>
+											</td>
+											<td class='timestamp'>12:51:58</td>
+											<td class='step-details'>
+Test passed												<img class='r-img' title='TS_601_TC_003_Verify_the_user_click_on_send_request_dropdown_and_click_completed_button_20240422125158.png' onerror='this.style.display="none"' data-featherlight='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_003_20240422125158.png' src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_003_20240422125158.png' data-src='C:\Users\admin\source\repos\IndustryConnect\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Week20AdvanceTaskMarsPart2SPecflowPOMJson\Screenshots\TS_601_TC_003_20240422125158.png'>											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view -->
+
+			
+			<!-- category view -->
+			
+<!-- exception view -->
+
+			
+
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+          Tests
+          <div class='panel-lead'>29</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+          Steps
+          <div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>4/22/2024 12:38:17 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>4/22/2024 12:51:59 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>00:13:46.1722039</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel dashboard-environment'>
+					<span class='right label cyan white-text'>Environment</span><p>&nbsp;</p>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Value</th>
+						</tr>
+							<tr>
+								<td>Host Name</td>
+								<td>Local host</td>
+							</tr>
+							<tr>
+								<td>Website</td>
+								<td>http://localhost:5001/Account/Profile</td>
+							</tr>
+							<tr>
+								<td>Environment</td>
+								<td>QA</td>
+							</tr>
+							<tr>
+								<td>Username</td>
+								<td>Tananya Asavaoran</td>
+							</tr>
+					</table>
+				</div>
+			</div>
+					</div>
+	</div>
+</div>
+<!-- dashboard view -->
+
+			<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 29,
+				passParent: 29,
+				failParent: 0,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 0,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+			
+		</script>
+	</body>
+</html>
